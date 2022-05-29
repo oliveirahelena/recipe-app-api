@@ -12,8 +12,8 @@
         "__pypackages__",
         "-s"
     ],
-    "python.linting.pylintEnabled": true,
-    "python.linting.pylintArgs": [
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
         "--disable=C0111"
     ],
     "python.linting.enabled": true,
