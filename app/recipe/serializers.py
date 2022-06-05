@@ -46,7 +46,8 @@ class RecipeDetailSerializer(RecipeSerializer):
     """Serializer for recipe detail view."""
 
     class Meta(RecipeSerializer.Meta):
-        fields = RecipeSerializer.Meta.fields + ['description']
+        fields = RecipeSerializer.Meta.fields + ['description', 'image']
+        read_only_fields = RecipeSerializer.Meta.read_only_fields + ['image']
 
     def _get_or_create_tags(self, tags, recipe):
         """Handle getting or creating tags as needed."""
